@@ -20,23 +20,11 @@
   cursor: pointer;
 }
 
-.link::before {
-  content: '';
-  display: inline;
-  width: 0%;
-  height: 0.2em;
-  position: absolute;
-  bottom: 0;
-  background-color: var(--clr-primary);
-  transition: width 0.2s ease-in;
-}
-
-.link:hover::before,
-.link:focus::before {
-  width: 100%;
-}
-
 .link--nav {
   text-transform: lowercase;
   font-weight: 500;
+}
+
+.link--icon {
+  color: var(--clr-fg);
 }
