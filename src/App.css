@@ -1,6 +1,7 @@
 :root {
-  --clr-bg: #89CFF0;
-  --clr-primary: #000000;
+  --clr-primary: #000000; /* Primary color */
+  --clr-bg: #ffffff; /* Background color */
+  --clr-fg: #000000; /* Foreground color */
 }
 
 .app {
@@ -11,13 +12,15 @@
 .center {
   display: flex;
   align-items: center;
+  justify-content: center; /* Center horizontally as well */
 }
 
 .link {
   color: var(--clr-primary);
-  padding: 0 0 0.3em 0;
+  padding-bottom: 0.3em;
   position: relative;
   cursor: pointer;
+  text-decoration: none; /* Remove underline from links */
 }
 
 .link--nav {

@@ -1,0 +1,29 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.project__title {
+  margin-bottom: 16px; /* Ensure this value is appropriate for your layout */
+}
+
+.project__description {
+  margin-bottom: 16px; /* Ensure this value is appropriate for your layout */
+}
+
+.project__tags {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0; /* Add bottom margin to space out tags from other content */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project__tag {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 0 8px 8px 0; /* Add margin to space out individual tags */
+}

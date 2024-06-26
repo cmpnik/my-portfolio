@@ -1,13 +1,19 @@
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Headings */
 h3 {
   font-size: 1.5rem;
+  margin: 0; /* Ensure there's no default margin */
 }
 
+/* Lists */
 ul {
   list-style-type: none;
+  padding: 0; /* Ensure there's no default padding */
+  margin: 0; /* Ensure there's no default margin */
 }

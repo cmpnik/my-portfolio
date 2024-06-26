@@ -1,23 +1,30 @@
-import styles from './Header.module.css'
+import React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
 
 const Header = () => {
-    return (
-        <header className={`${styles.header} center`}>
-            <h3>
-                <a>My Portfolio</a>
-            </h3>
-            <nav className={`center ${styles.nav}`}>
-                <ul style={{ display: 'flex' }} className={styles.nav__list}>
-                    <li className={styles.nav__item}>
-                        <a className='link link--nav'>Projects</a>
-                    </li>
-                    <li className={styles.nav__item}>
-                        <a className='link link--nav'>Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    );
+  return (
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <a href="#home" style={{ textDecoration: 'none', color: 'inherit' }}>
+            My Portfolio
+          </a>
+        </Typography>
+        <Box>
+          <Button color="inherit" href="#projects">
+            Projects
+          </Button>
+          <Button color="inherit" href="#contact">
+            Contact
+          </Button>
+        </Box>
+      </Toolbar>
+    </AppBar>
+  );
 };
 
 export default Header;
