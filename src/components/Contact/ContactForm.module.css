@@ -1,0 +1,17 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 64px; /* 8 * 8px */
+  margin-bottom: 64px; /* Add this line for bottom margin */
+  text-align: center;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* 2 * 8px */
+}
+
+.submitButton {
+  width: 100%;
+}
