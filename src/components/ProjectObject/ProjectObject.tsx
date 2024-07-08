@@ -6,23 +6,58 @@ import Project from '../../types/project';
 
 const ProjectObject = ({ project }: { project: Project }) => {
   return (
-    <Card sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
+    <Card sx={{ 
+      display: 'flex', 
+      flexDirection: 'column', 
+      justifyContent: 'space-between', 
+      height: '100%'
+    }}>
       <CardContent>
-        <Typography variant="h5" sx={{ mb: 2 }}>
+        {project.image && (
+          <Box 
+            component="img" 
+            src={project.image} 
+            alt={project.title} 
+            sx={{ 
+              width: '100%', 
+              height: 'auto', 
+              mb: 2, 
+              maxHeight: 300, 
+              objectFit: 'cover' 
+            }} 
+          />
+        )}
+        <Typography variant="h5" sx={{ mb: 1 }}>
           {project.title}
         </Typography>
-        <Typography variant="body2" sx={{ mb: 2 }}>
-          {project.description}
-        </Typography>
-        <Box component="ul" sx={{ listStyle: 'none', p: 0, m: 0, mb: 2, display: 'flex', flexWrap: 'wrap' }}>
+        <Box component="ul" sx={{ 
+          listStyle: 'none', 
+          p: 0, 
+          m: 0, 
+          mb: 2, 
+          display: 'flex', 
+          flexWrap: 'wrap' 
+        }}>
           {project.tags.map((tag) => (
-            <Box component="li" key={tag} sx={{ backgroundColor: '#f0f0f0', borderRadius: 1, p: 1, mr: 1, mb: 1 }}>
+            <Box 
+              component="li" 
+              key={tag} 
+              sx={{ 
+                backgroundColor: '#f0f0f0', 
+                borderRadius: 1, 
+                p: 1, 
+                mr: 1, 
+                mb: 1 
+              }}
+            >
               {tag}
             </Box>
           ))}
         </Box>
+        <Typography variant="body2">
+          {project.description}
+        </Typography>
       </CardContent>
-
       <CardActions>
         <Button href={project.repository} startIcon={<GitHubIcon />}>
           GitHub

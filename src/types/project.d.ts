@@ -5,6 +5,7 @@ interface Project {
     tags: string[];
     repository: string;
     page?: string; // Optional property
+    image?: string;
   }
   
 export default Project

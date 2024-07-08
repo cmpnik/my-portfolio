@@ -12,7 +12,7 @@ const Projects = () => {
       <Typography variant="h4" component="h2" gutterBottom>
         Projects
       </Typography>
-      <Grid container spacing={4}>
+      <Grid container spacing={4} justifyContent="center" alignItems="center">
         {projectsData.map((project: Project) => (
           <Grid item key={project.id} xs={12} sm={6} md={4}>
             <ProjectObject project={project} />

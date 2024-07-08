@@ -10,18 +10,19 @@ const Header = () => {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          <a href="#home" style={{ textDecoration: 'none', color: 'inherit' }}>
-            My Portfolio
+          <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+            My portfolio
           </a>
         </Typography>
         <Box>
-          <Button color="inherit" href="#projects">
-            Projects
-          </Button>
-          <Button color="inherit" href="#contact">
-            Contact
-          </Button>
-        </Box>
+  <Button color="inherit" href="#projects">
+    Projects
+  </Button>
+  <Button color="inherit" href="#contact">
+    Contact
+  </Button>
+</Box>
+
       </Toolbar>
     </AppBar>
   );

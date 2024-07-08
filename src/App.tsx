@@ -1,17 +1,23 @@
 import React from 'react';
 import './App.css';
-import Header from "./components/Header/Header"
-import About from "./components/About/About"
-import Projects from "./components/Projects/Projects"
-import ContactForm from './components/Contact/ContactForm';
+import Header from './components/Header/Header';
+import Home from "./pages/Home";
+import Helicopter from "./pages/Projects/Helicopter"
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
 
 function App() {
   return (
     <div className="app">
-      <Header />
-      <About />
-      <Projects />
-      <ContactForm />
+      <Header/>
+      <Router>
+        <div>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/Helicopter" element={<Helicopter/>}/>
+          </Routes>
+        </div>
+      </Router>
     </div>
   )
 }
