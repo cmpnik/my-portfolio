@@ -12,7 +12,7 @@ const ProjectCard = ({ img, title, tags, disc, github, page }: ProjectCardProps)
             </div>
             <div className="py-4 px-6 flex-1">
                 <h2 className="text-2xl font-medium">{title}</h2>
-                <div className="flex gap-2 p-2">
+                <div className="flex gap-2 p-2 justify-center">
                     {tags.map((tag) => (
                         <span key={tag} className="text-sm bg-gray-200 px-2 py-1 rounded">
                             {tag}

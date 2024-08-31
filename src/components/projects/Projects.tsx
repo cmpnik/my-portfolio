@@ -1,6 +1,5 @@
-// Projects.tsx
 import React from 'react';
-import './projects.css';
+import './style.css';
 import projects from './data';
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
 import ProjectCard from '../projectCard/ProjectCard';
@@ -8,18 +7,11 @@ import ProjectCard from '../projectCard/ProjectCard';
 const Projects = () => {
     return (
         <div className="px-5 max-w-[1560px] mx-auto py-10">
-            <div className="flex justify-between items-center gap-5 mb-10">
-                <div className="w-2/3 font-medium text-[32px] flex items-center gap-2">
-                    <div>
+            <div className="flex justify-between items-center mb-10">
+                <div className="flex items-center">
+                    <h2 className="font-semibold text-[32px] flex items-center gap-2">
                         <span className="text-[#007BFF]">#</span>projects
-                    </div>
-                    <div className="line w-2/3 h-px bg-[#007BFF]"></div>
-                </div>
-                <div className="font-medium flex items-center gap-2">
-                    <a href="#" className="flex items-center gap-1">
-                        <span>View all</span>
-                        <ArrowRightIcon className="h-5 w-5 text-[#007BFF]" />
-                    </a>
+                    </h2>
                 </div>
             </div>
             <div className="flex justify-center">
@@ -36,6 +28,11 @@ const Projects = () => {
                         />
                     ))}
                 </div>
+            </div>
+            <div className="flex justify-center mt-10">
+                <a href="#" className="font-medium flex items-center gap-1 text-[#007BFF]">
+                    <button>View all</button>
+                </a>
             </div>
         </div>
     );
