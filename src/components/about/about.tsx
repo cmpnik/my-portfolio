@@ -9,7 +9,7 @@ const About = () => {
                         Hello, I am a <span className="text-[#007BFF]">computer science</span> student and developer
                     </h1>
                     <p className="my-6 text-center">My aim is to learn and develop my skills as a programmer, designer, and developer</p>
-                    <button className="font-medium py-2 px-4 border duration-200 border-[#007BFF] hover:bg-[#007BFF33]">Contact me!</button>
+                    <button className="font-medium py-2 px-4 rounded border duration-200 border-[#007BFF] hover:bg-[#007BFF33]">Contact me!</button>
                 </div>
             </div> 
         </div>

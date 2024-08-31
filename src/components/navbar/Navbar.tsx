@@ -24,10 +24,10 @@ const Navbar = () => {
                             <a href="#">#home</a>
                         </li>
                         <li className="text-[32px] my-4 md:my-auto md:text-base mx-4">
-                            <a href="#">#projects</a>
+                            <a href="#">#about</a>
                         </li>
                         <li className="text-[32px] my-4 md:my-auto md:text-base mx-4">
-                            <a href="#">#about</a>
+                            <a href="#">#projects</a>
                         </li>
                         <li className="text-[32px] my-4 md:my-auto md:text-base mx-4">
                             <a href="#">#contact</a>
