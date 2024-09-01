@@ -30,6 +30,9 @@ const Navbar = () => {
                             <a href="#">#projects</a>
                         </li>
                         <li className="text-[32px] my-4 md:my-auto md:text-base mx-4">
+                            <a href="#">#skills</a>
+                        </li>
+                        <li className="text-[32px] my-4 md:my-auto md:text-base mx-4">
                             <a href="#">#contact</a>
                         </li>
                     </ul>
