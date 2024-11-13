@@ -1,0 +1,20 @@
+@keyframes blinkCursor {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blink {
+  display: inline-block;
+  width: 2px; /* Cursor width */
+  height: 1em; /* Match the height to the font size */
+  background-color: black; /* Cursor color */
+  animation: blinkCursor 0.75s step-end infinite; /* Cursor blink effect */
+  margin-left: 2px; /* Space between text and cursor */
+}

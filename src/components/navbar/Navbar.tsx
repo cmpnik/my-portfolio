@@ -8,9 +8,13 @@ const Navbar = () => {
         setMenuOpen(!menuOpen);
     };
 
+    const handleLinkClick = () => {
+        setMenuOpen(false); // Close the menu
+    };
+
     return (
         <div className="fixed top-0 left-0 right-0 z-20 bg-white shadow-md">
-            <div className="max-w-[1560px] mx-auto flex items-center justify-between pt-4 pb-4 my-2">
+            <div className="max-w-[1560px] mx-auto flex items-center justify-between py-5">
                 <div className="left flex items-center font-bold text-base mx-4">
                     my_portfolio
                 </div>
@@ -21,19 +25,19 @@ const Navbar = () => {
                         } list-none items-center justify-center`}
                     >
                         <li className="text-[32px] my-4 md:my-auto md:text-base mx-4">
-                            <a href="#">#home</a>
+                            <a href="#hero" onClick={handleLinkClick}>Home</a>
                         </li>
                         <li className="text-[32px] my-4 md:my-auto md:text-base mx-4">
-                            <a href="#">#about</a>
+                            <a href="#about" onClick={handleLinkClick}>About</a>
                         </li>
                         <li className="text-[32px] my-4 md:my-auto md:text-base mx-4">
-                            <a href="#">#projects</a>
+                            <a href="#projects" onClick={handleLinkClick}>Projects</a>
                         </li>
                         <li className="text-[32px] my-4 md:my-auto md:text-base mx-4">
-                            <a href="#">#skills</a>
+                            <a href="#skills" onClick={handleLinkClick}>Skills</a>
                         </li>
                         <li className="text-[32px] my-4 md:my-auto md:text-base mx-4">
-                            <a href="#">#contact</a>
+                            <a href="#contact" onClick={handleLinkClick}>Contact</a>
                         </li>
                     </ul>
                     <button onClick={toggleMenu} className="absolute block md:hidden right-4 text-2xl z-40">

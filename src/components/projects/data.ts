@@ -1,29 +1,24 @@
 export type Project = {
-    img: string;
     title: string;
     tags: string[];
     disc: string;
     github: string;
-    page: string;
+    page?: string;
 };
 
 
 const projects: Project[] = [
     {
-        img: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/android-studio-icon.png",
         title: "Flash Card App",
         tags: ["android", "kotlin"],
         disc: "Flash card app created for university assignment",
-        github: "https://github.com/",
-        page: "#"
+        github: "https://github.com/cmpnik/flashcard-app",
     },
     {
-        img: "https://icons.veryicon.com/png/o/business/vscode-program-item-icon/react-3.png",
         title: "Portfolio Website",
         tags: ["react", "typescript"],
         disc: "Personal portfolio website built using React and TypeScript.",
-        github: "https://github.com/",
-        page: ""
+        github: "https://github.com/cmpnik/my-portfolio",
     },
     // Add more projects here
 ];

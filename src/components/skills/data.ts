@@ -1,14 +1,20 @@
 const skills = [
+    // Programming Languages
     { name: 'Python', iconClass: 'devicon-python-plain colored' },
+    { name: 'Java', iconClass: 'devicon-java-plain colored' },
     { name: 'C', iconClass: 'devicon-c-plain colored' },
-    { name: 'JavaScript', iconClass: 'devicon-javascript-plain colored' },
+    { name: 'C#', iconClass: 'devicon-csharp-plain colored' },
     { name: 'Kotlin', iconClass: 'devicon-kotlin-plain colored' },
-    { name: 'React', iconClass: 'devicon-react-original colored' },
+
+    // Web Development
+    { name: 'JavaScript', iconClass: 'devicon-javascript-plain colored' },
     { name: 'TypeScript', iconClass: 'devicon-typescript-plain colored' },
+    { name: 'React', iconClass: 'devicon-react-original colored' },
+    
+    // Tools & Technologies
     { name: 'Git', iconClass: 'devicon-git-plain colored' },
-    { name: 'HTML5', iconClass: 'devicon-html5-plain colored' },
-    { name: 'CSS3', iconClass: 'devicon-css3-plain colored' },
-    { name: 'Linux', iconClass: 'devicon-linux-plain colored' },
+    { name: 'Android Studio', iconClass: 'devicon-android-plain colored' },
 ];
 
-export default skills
+
+export default skills;
