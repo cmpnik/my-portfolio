@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './style.css';
 
-const textToType = "Hello, I am a computer science student and developer";
+const textToType = "Hello, I'm Nicholas Camp, a computer science student";
 
 const Hero = () => {
     const [displayedText, setDisplayedText] = useState('');
@@ -39,7 +39,7 @@ const Hero = () => {
                 </h1>
 
                 <p className="my-6 text-base md:text-lg lg:text-xl text-gray-800 mb-8">
-                    My aim is to learn and develop my skills as a programmer, designer, and developer.
+                    I'm passionate about technology and excited to explore diverse paths in the industry, solving complex problems and contributing to the field.
                 </p>
 
                 <button

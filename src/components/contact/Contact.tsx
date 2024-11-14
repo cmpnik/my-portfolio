@@ -32,15 +32,15 @@ const Contact = () => {
             <div className="text-center mb-8">
                 <h2 className="font-semibold text-3xl md:text-4xl leading-tight mb-4">Contact</h2>
                 <p className="text-base md:text-lg text-[#333] leading-relaxed mx-auto">
-                    I’d love to hear from you! Feel free to reach out via this form or connect with me on LinkedIn and other platforms.
+                    I’d love to connect! Whether you have a question, opportunity, or just want to say hi, feel free to reach out through this form.
                 </p>
             </div>
 
             <div className="max-w-[640px] mx-auto border border-gray-300 bg-white shadow-lg rounded-lg p-8">
                 <div className="text-center mb-5">
-                    <h3 className="text-3xl font-semibold text-gray-700">Contact me</h3>
+                    <h3 className="text-3xl font-semibold text-gray-700">Get in Touch</h3>
                     <p className="text-md text-gray-600 mt-2">
-                        Please fill out the form, and I'll respond soon.
+                        Fill out the form below, and I'll be sure to get back to you as soon as possible.
                     </p>
                 </div>
 

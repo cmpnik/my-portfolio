@@ -14,15 +14,15 @@ const About = () => {
             {/* About Section */}
             <div className="flex justify-center">
                 <div className="text-center">
-                    <p className="text-base md:text-lg text-gray-800 leading-relaxed max-w-[1280px] mx-auto">
-                        Hello! I’m a computer science student based in Christchurch, New Zealand, with a deep passion for programming, design, and development. I specialize in embedded systems and web development, constantly seeking new challenges and opportunities to grow. I thrive on solving complex problems with innovative solutions, and I'm always eager to explore various career pathways in the tech industry. Excited by the rapid advancements in technology, I look forward to where my journey will take me and how I can contribute to the field.
-                    </p>
+                <p className="text-base md:text-lg text-gray-800 leading-relaxed max-w-[1280px] mx-auto">
+                    Hello! I’m Nicholas Camp, a computer science student at the University of Canterbury in Christchurch, New Zealand, graduating in 2025. I have a strong interest in programming, design, and development and am excited to explore all opportunities in the tech industry. I enjoy tackling complex problems with innovative solutions and am constantly seeking new challenges and ways to grow. Driven by the rapid advancements in technology, I look forward to seeing where my journey will take me and how I can make a meaningful contribution to the field.
+                </p>
                     {/* Social Media Links */}
                     <div className="mt-6 flex justify-center space-x-4">
-                        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/cmpnik" target="_blank" rel="noopener noreferrer">
                             <i className="devicon-github-original text-3xl hover:text-gray-400"></i>
                         </a>
-                        <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer">
+                        <a href="https://linkedin.com/in/nicholas-camp-2b2751318" target="_blank" rel="noopener noreferrer">
                             <i className="devicon-linkedin-plain text-3xl hover:text-gray-400"></i>
                         </a>
                     </div>
