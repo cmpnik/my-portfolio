@@ -5,6 +5,7 @@ const textToType = "Hello, I'm Nicholas Camp, a computer science student";
 
 const Hero = () => {
     const [displayedText, setDisplayedText] = useState('');
+    const [isTyping, setIsTyping] = useState(true);
 
     const handleButtonClick = () => {
         const contactSection = document.getElementById('contact');
@@ -15,19 +16,18 @@ const Hero = () => {
 
     useEffect(() => {
         let index = 0;
-        let timeoutId: NodeJS.Timeout;
+        const intervalId = setInterval(() => {
+            // Update displayed text by slicing up to the current index
+            setDisplayedText(textToType.slice(0, index + 1));
+            index++;
 
-        const typeCharacter = () => {
-            if (index < textToType.length) {
-                setDisplayedText(prev => prev + textToType.charAt(index));
-                index++;
-                timeoutId = setTimeout(typeCharacter, 100); // Store the timeout ID
+            if (index === textToType.length) {
+                clearInterval(intervalId); // Stop interval when text is fully typed
+                setIsTyping(false); // Stop cursor blinking after typing is complete
             }
-        };
+        }, 100);
 
-        typeCharacter();
-
-        return () => clearTimeout(timeoutId);
+        return () => clearInterval(intervalId); // Clean up on unmount
     }, []);
 
     return (
@@ -35,7 +35,7 @@ const Hero = () => {
             <div className="text-center">
                 <h1 className="font-semibold text-[28px] md:text-[36px] lg:text-[44px] leading-tight text-gray-900 mb-8">
                     {displayedText}
-                    <span className="blink"></span> {/* Blinking cursor */}
+                    {isTyping && <span className="blink">|</span>} {/* Blinking cursor */}
                 </h1>
 
                 <p className="my-6 text-base md:text-lg lg:text-xl text-gray-800 mb-8">

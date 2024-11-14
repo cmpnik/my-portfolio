@@ -12,7 +12,7 @@ type FormData = {
 const Contact = () => {
     const [formData, setFormData] = useState<FormData>({ name: '', email: '', message: '' });
     const [formKey, setFormKey] = useState(0); // Key to force remount on form reset
-    const [state, handleSubmit] = useForm("mkgnbgjv");
+    const [state, handleSubmit, reset] = useForm("mkgnbgjv");
 
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -23,8 +23,11 @@ const Contact = () => {
             toast.success("Your message has been sent!");
             setFormData({ name: '', email: '', message: '' });
             setFormKey((prevKey) => prevKey + 1); // Trigger form remount
+
+            // Use reset from useForm to clear the form state
+            reset();
         }
-    }, [state.succeeded]);
+    }, [state.succeeded, reset]);
 
     return (
         <div id="contact" className="px-4 max-w-[1280px] mx-auto pb-16">

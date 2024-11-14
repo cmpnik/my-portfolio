@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="bg-gray-600 text-white py-3">
             <div className="container mx-auto flex justify-center space-x-6">
                 <a 
-                    href="https://github.com/yourprofile" 
+                    href="https://github.com/cmpnik" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     aria-label="GitHub Profile"
